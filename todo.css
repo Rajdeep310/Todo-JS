@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    box-sizing: border-box;
+}
+i{
+    pointer-events: none;
+}
+.green:hover{
+    color: rgb(18, 14, 71);
+}
+.done,.delete{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    background-color: rgb(240, 240, 240);
+}
+.full{
+    width: 60%;
+    min-height: 100vh;
+    background-color: #f6f6f6;
+    text-align: center;
+    margin: 0 auto;
+    box-shadow: 2px 3px 4px 3px rgb(213, 223, 233);
+}
+.header{
+    height: 20vh;
+    width: 100%;
+    background-color: khaki;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: monospace;
+}
+.header>h1{
+    letter-spacing: 0.2em;
+}
+.z{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    font-size: 0.9em;
+    width: 70%;
+    outline: none;
+    align-items:center;
+    justify-content: center;
+    height: 5vh;
+    background-color: rgb(243, 236, 174);
+    border: 1px solid khaki;
+    border-radius: 1em;
+    text-align: center;
+}
+.add{
+    cursor: pointer;
+    font-weight: bold;
+    width: 15%;
+    display: flex;
+    outline: none;
+    align-items:center;
+    justify-content: center;
+    height: 5vh;
+    color: white;
+    font-size: 1em;
+    background-color: rgb(250, 239, 145);
+    border: 1px solid khaki;
+    border-radius: 0.5em;
+}
+.add:hover{
+    background-color:rgb(250, 227, 19) ;
+}
+.list{
+    background-color: khaki;
+    min-height:80vh ;
+    border-top: 1px solid lavender;
+    flex-direction: column;
+    justify-content: center;
+}
+.item{
+    margin: 2em auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.iteminput{
+    width: 60%;
+    height: 4vh;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 0.5px solid rgba(223, 219, 18, 0.465);
+    text-align:center;
+}
+
+.done{
+    border: none;
+    background-color: rgb(87, 209, 39);
+    color: white;
+    border-radius: 0.5em;
+    padding: 0.2em;
+    width: 10%; 
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+}
+.done:hover{
+    background-color: rgb(75, 216, 20);
+}
+.delete{
+    border: none;
+    font-weight: bold;
+    background-color: rgba(255, 72, 72, 0.911);
+    color: rgb(255, 255, 255);
+    border-radius: 0.5em;
+    padding: 0.2em;
+    width: 10%;
+    outline:none;
+    cursor: pointer;
+}
+.delete:hover{
+    background-color:rgba(252, 42, 42, 0.911) ;
+}
+.stiff{
+    opacity:0.4 ;
+    pointer-events: none;
+    background-color: rgba(238, 222, 78, 0.781);
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 0.3em;
+    color: white;
+}
+.stif{
+    opacity:0.2 ;
+    background-color: rgb(224, 203, 13);
+    font-size: 1em;
+    border-radius: 0.5em;
+    color: white;
+}
+.remove{
+    animation: drop 0.4s ease-in;
+}
+@keyframes drop{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+        transform: rotateZ(40deg);
+    }
+}
